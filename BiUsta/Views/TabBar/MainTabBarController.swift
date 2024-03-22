@@ -14,16 +14,17 @@ class MainTabBarController: UITabBarController {
 
         // Do any additional setup after loading the view.
         navigationItem.title = "BiUsta"
+        navigationController?.navigationBar.barTintColor = .systemPink
         configureTabBar()
     }
     
     func configureTabBar(){
         let homeViewController = HomeViewController()
-        homeViewController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "home_icon"), selectedImage: UIImage(systemName: "home_icon_selected"))
+        homeViewController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.circle"), selectedImage: UIImage(systemName: "house.circle.fill"))
         let profileViewController = UINavigationController(rootViewController: ProfileViewController())
-        profileViewController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "profile_icon"), selectedImage: UIImage(named: "profile_icon_selected"))
+        profileViewController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.crop.circle"), selectedImage: UIImage(systemName: "person.crop.circle.fill"))
         let settingsViewController = UINavigationController(rootViewController: SettingsViewController())
-        settingsViewController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(named: "settings_icon"), selectedImage: UIImage(named: "settings_icon_selected"))
+        settingsViewController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gearshape"), selectedImage: UIImage(systemName: "gearshape.fill"))
         
         
         viewControllers = [homeViewController, profileViewController, settingsViewController]

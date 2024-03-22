@@ -145,16 +145,32 @@
 		B6AF27D32BADB391005DFD41 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B6AF27DB2BADBAB8005DFD41 /* TabBar */,
+				B6AF27DA2BADBA7D005DFD41 /* LoginPages */,
 				B6AF27782BADA3B0005DFD41 /* HomeViewController.swift */,
 				B6AF27D62BADB6EC005DFD41 /* SettingsViewController.swift */,
 				B6AF27D82BADB705005DFD41 /* ProfileViewController.swift */,
-				B6AF27922BADA563005DFD41 /* SignInViewController.swift */,
-				B6AF27942BADA56B005DFD41 /* SignUpViewController.swift */,
-				B6AF27CF2BADA9A2005DFD41 /* ForgotPasswordViewController.swift */,
-				B6AF27D12BADA9B9005DFD41 /* EmailVerificationViewController.swift */,
-				B6AF27D42BADB562005DFD41 /* MainTabBarController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B6AF27DA2BADBA7D005DFD41 /* LoginPages */ = {
+			isa = PBXGroup;
+			children = (
+				B6AF27D12BADA9B9005DFD41 /* EmailVerificationViewController.swift */,
+				B6AF27942BADA56B005DFD41 /* SignUpViewController.swift */,
+				B6AF27922BADA563005DFD41 /* SignInViewController.swift */,
+				B6AF27CF2BADA9A2005DFD41 /* ForgotPasswordViewController.swift */,
+			);
+			path = LoginPages;
+			sourceTree = "<group>";
+		};
+		B6AF27DB2BADBAB8005DFD41 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B6AF27D42BADB562005DFD41 /* MainTabBarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
